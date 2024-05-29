@@ -9,7 +9,7 @@ form.on('submit', async function (e) {
     const response = await axios.get('https://api.giphy.com/v1/gifs/search', {
         params: {
             q: searchValue,
-            api_key: 'l9Iyf1WweyKXWHE2pg5hD5x2ZcJiGXMU',
+            api_key: window.config.apiKey,
         }
     });
 
